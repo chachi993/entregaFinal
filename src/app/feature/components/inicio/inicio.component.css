@@ -1,0 +1,21 @@
+ .example-card {
+  width: 20%;
+    margin: 10px;
+  }
+   .tituloHome{
+      color:black;
+    text-align: center;
+    margin-top: 1rem;
+   }
+  .container {
+      display: flex;
+        flex-direction: row;
+        margin-left: 15%;
+        margin-top: 20px;
+  }
+  .titulo{
+    text-align: center;
+  }
+  .button{
+    margin-left: 25%;
+  }

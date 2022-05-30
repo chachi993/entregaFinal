@@ -1,0 +1,26 @@
+<app-toolbar></app-toolbar>
+<div *ngFor="let curso of cursos">
+  <mat-card class="card">
+    <mat-card-title-group>
+      <mat-card-title class="titulo">{{ curso.nombre }}</mat-card-title>
+    </mat-card-title-group>
+    <mat-card-content>
+      <p>Descripcion: {{ curso.descripcion }}</p>
+    </mat-card-content>
+    <mat-card-content>
+      <p>Profesor: {{ curso.profesor.nombre }} {{ curso.profesor.apellido }}</p>
+      <p>Estudiantes: {{ curso.alumnos.length }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button
+        *ngIf="sesionActual.activa && sesionActual.usuario.rol == 'admin'"
+        mat-flat-button
+        color="warn"
+        (click)="deleteCurso(curso.id)"
+      >
+        Eliminar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <br />
+</div>

@@ -1,0 +1,27 @@
+table {
+    width: 80%;
+    
+  }
+.tabla{
+  margin-left: 15%;
+
+}
+.table-content{
+    margin-left: 40%;
+    margin-right: 10px;
+}
+
+
+.mat-row .mat-cell {
+    cursor: pointer;
+  }
+  
+
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }
+  
+  .action-link {
+    align-items: center;
+  }
